@@ -1,17 +1,14 @@
-.birinci{
+#Magnificient{
     
     width: 100%;
-    height: 766px;
+    height: 600px;
    top: 0px;
    left: 0%;
+   right: 0%;
     position: relative;
     background-image: url(../photos/bgn-home-slider-01.jpg);
 }
-.leftBtn{
-    height: 100%;
-    display: flex;
-  
-}
+
 .leftBtn .previous {
  
     align-items: center;
@@ -19,17 +16,16 @@
     background-color: inherit;
     padding: 14px 28px;
     font-size: 16px;
+    color:white;
    
     cursor: pointer;
     display: inline-block;
     transition: 0.3s;
   }
-  .previous{
-      color:white;
-  }
+
   .leftBtn .previous:hover {
       position: relative;
-     
+       font-size:1.8em;
       left: -20px;
   }
 
@@ -38,14 +34,21 @@
   .rightBtn{
       position: absolute;
     height: 100%;
-    right: 0;
-    top:0;
-    display: flex;
-  
+    right: 20px;
+    top:50%;
 }
+.leftBtn{
+    position: absolute;
+  height: 100%;
+  left: 0;
+  top:50%;
+}
+
+
+
 .rightBtn .next {
 
-    justify-content: flex-end;
+    
     align-items: center;
     border:none;
     background-color: inherit;
@@ -61,11 +64,41 @@
   }
   .leftBtn .previous:hover {
       position: relative;
-     
+      font-size: 1.5em;
       left: -20px;
   }
   .rightBtn .next:hover {
     position: relative;
-   
-    right: -10px;
+    font-size: 1.5em;
+    right: -20px;
 }
+
+
+
+.content{
+    padding-top: 15.125rem;
+    color: aliceblue;
+    }
+    .btn1,.btn2{
+       transition: 3s ;
+       padding: 15px 35px;
+       border: none;
+    }
+    .btn1:hover{
+        background: linear-gradient(to top,#1976bc 0%,#8dc645 100%)
+    }
+    .btn2:hover{
+        background: linear-gradient(to bottom,#1976bc 0%,#8dc645 100%)
+    }
+    .contain{
+        position: relative;
+        width: 96%;     
+        top: -70px;
+        left: 2%;
+        right: 2%;
+        
+    }
+    .jumbotron{
+        border-bottom:solid   #1976bc;
+    }
+   
